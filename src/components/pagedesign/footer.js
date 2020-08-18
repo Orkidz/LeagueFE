@@ -4,63 +4,44 @@ import styled from "styled-components";
 function Footer() {
   return (
     <FooterContainer>
-      <div>
-        <ul>
-          <li>
-            <a href="#home">ABOUT</a>
-          </li>
-          <li>
-            <a href="#news">CONTACT</a>
-          </li>
-          <li>
-            <a href="#contact">NEWS</a>
-          </li>
-          <li>
-            <a href="#about">HOME</a>
-          </li>
-        </ul>
+      <div className="footer"></div>
+
+      <div className="copyright">
+        <p className="p-small">
+          Copyright © 2020 <a href="">Kaneki Enrique Ramos</a> - All rights
+          reserved
+        </p>
       </div>
     </FooterContainer>
   );
 }
 
 const FooterContainer = styled.div`
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: #fff;
-  justify-content: center;
-  border-style: solid;
-  border-color: #00bfff;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  border-width: medium;
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #333333;
+  .footer {
+    padding-top: 5rem;
+    background-color: #113448;
   }
 
-  li {
-    float: right;
+  .footer .text-container {
+    margin-bottom: 2.25rem;
   }
 
-  li a {
-    display: block;
-    color: #00bfff;
-    font-size: 20px;
-    text-decoration: none;
-    padding: 20px;
+  .footer h4 {
+    margin-bottom: 0.75rem;
+    color: #fff;
   }
 
-  li a:hover {
-    background-color: #111111;
+  .footer p,
+  .footer ul {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+
+  .copyright {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    background-color: #113448;
+    text-align: center;
   }
 `;
 

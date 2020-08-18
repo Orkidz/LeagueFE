@@ -30,16 +30,12 @@ export class Champion extends Component {
   }
 }
 
-const ChampionContainer = styled.div`
-  width: 50%;
-  float: left;
-`;
+const ChampionContainer = styled.div``;
 
 const ChampionData = styled.div`
-  width: 50%;
-  margin: 0 auto;
+  text-align: center;
   padding: 20px;
-  color: white;
+  color: black;
 
   &:hover {
     cursor: pointer;
