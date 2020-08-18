@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 export class Header extends Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   render() {
@@ -18,7 +18,12 @@ export class Header extends Component {
           <li>
             <h1>LoL Randomizer | </h1>
           </li>
-          <li><h1>Current Score: {this.props.currentScore}</h1></li>
+          <li>
+            <h1>Current Score: {this.props.currentScore} | </h1>
+          </li>
+          <li>
+            <h1>High Score: {this.props.highScore}</h1>
+          </li>
         </ul>
         <ul className="header-menu">
           <li>
