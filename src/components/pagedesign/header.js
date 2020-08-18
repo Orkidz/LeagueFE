@@ -1,35 +1,42 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FaPowerOff } from "react-icons/fa";
 import styled from "styled-components";
 
-function Header() {
-  return (
-    <HeaderContainer className="header">
-      <ul className="power-button-and-title">
-        <li>
-          <StyledFaPowerOff />
-        </li>
-        <li>
-          <h1>LoL Randomizer</h1>
-        </li>
-      </ul>
-      <ul className="header-menu">
-        <li>
-          <a href="#home">ABOUT</a>
-        </li>
-        <li>
-          <a href="#news">CONTACT</a>
-        </li>
-        <li>
-          <a href="#contact">NEWS</a>
-        </li>
-        <li>
-          <a href="#about">HOME</a>
-        </li>
-      </ul>
-    </HeaderContainer>
-  );
+export class Header extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <HeaderContainer className="header">
+        <ul className="power-button-and-title">
+          <li>
+            <StyledFaPowerOff />
+          </li>
+          <li>
+            <h1>LoL Randomizer | </h1>
+          </li>
+          <li><h1>Current Score: {this.props.currentScore}</h1></li>
+        </ul>
+        <ul className="header-menu">
+          <li>
+            <a href="#home">ABOUT</a>
+          </li>
+          <li>
+            <a href="#news">CONTACT</a>
+          </li>
+          <li>
+            <a href="#contact">NEWS</a>
+          </li>
+          <li>
+            <a href="#about">HOME</a>
+          </li>
+        </ul>
+      </HeaderContainer>
+    );
+  }
 }
 
 const StyledFaPowerOff = styled(FaPowerOff)`
