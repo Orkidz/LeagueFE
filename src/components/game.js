@@ -112,6 +112,48 @@ const GameContainer = styled.div`
     -webkit-transform: scale(1.15);
     transform: scale(1.15);
   }
+
+  .cards-1 {
+    padding-top: 3rem;
+    padding-bottom: 2.875rem;
+  }
+
+  .cards-1 .card {
+    margin-bottom: 2.5rem;
+    border: none;
+    text-align: center;
+  }
+
+  .cards-1 .fa-stack {
+    width: 6rem;
+    height: 6rem;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    line-height: 6rem;
+    text-align: left;
+  }
+
+  .cards-1 .fa-stack .hexagon {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background: url("../images/hexagon-green.svg") center center no-repeat;
+    background-size: 6rem 6rem;
+  }
+
+  .cards-1 .fa-stack-1x {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .cards-1 .card-body {
+    padding: 0;
+  }
+
+  .cards-1 .card-title {
+    margin-bottom: 0.625rem;
+  }
 `;
 
 const ScoresContainer = styled.div`

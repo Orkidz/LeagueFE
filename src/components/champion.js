@@ -15,15 +15,21 @@ export class Champion extends Component {
     return (
       <ChampionContainer onClick={this.props.onClickEvent(this.props.data.key)}>
         <ChampionData>
-          <div>{this.props.data.name}</div>
-          <div>{this.props.data.title}</div>
-          <div>{this.props.data.blurb}</div>
-          <ImageContainer>
-            <img src={this.props.data.image} />
-          </ImageContainer>
-          {this.state.showSkinCount && (
-            <div>(this champ has {this.props.data.skinCount} skins)</div>
-          )}
+          <div className="text-container">
+            <div className="image-container">
+              <h2>{this.props.data.name}</h2>
+              <img
+                className="img-fluid"
+                src={this.props.data.image}
+                alt="alternative"
+              />
+              <h3>{this.props.data.title}</h3>
+              <p>{this.props.data.blurb}</p>
+              {this.state.showSkinCount && (
+                <div>(this champ has {this.props.data.skinCount} skins)</div>
+              )}
+            </div>
+          </div>
         </ChampionData>
       </ChampionContainer>
     );
@@ -33,18 +39,25 @@ export class Champion extends Component {
 const ChampionContainer = styled.div``;
 
 const ChampionData = styled.div`
-  text-align: center;
   padding: 20px;
   color: black;
 
   &:hover {
     cursor: pointer;
-    border: solid 1px blue;
   }
 
   img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    margin-bottom: 40px !important;
+  }
+
+  .image-container h2 {
+    margin-top: 0px !important;
+    text-align: left !important;
+  }
+
+  .image-container h3 {
+    text-align: left !important;
   }
 `;
 
