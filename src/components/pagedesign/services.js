@@ -14,7 +14,7 @@ export class Services extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="section-title">SOCIALS</div>
-                <h2>
+                <h2 style={{color: 'white'}}>
                   Feel free to follow any of my social media pages! I love
                   getting closer to my fans!
                 </h2>
@@ -32,7 +32,7 @@ export class Services extends Component {
                   </div>
                   <div className="card-body">
                     <h3 className="card-title">Twitch</h3>
-                    <p>
+                    <p style={{color: 'black'}}>
                       Live stream platform for gaming, coding and safe space for
                       my fellow nerd
                     </p>
@@ -68,7 +68,7 @@ export class Services extends Component {
                   </div>
                   <div className="card-body">
                     <h3 className="card-title">Facebook & Instagram</h3>
-                    <p>
+                    <p style={{color: 'black'}}>
                       Connect with me and let me know about all of your ideas
                     </p>
                     <ul className="list-unstyled li-space-lg">
@@ -105,9 +105,8 @@ export class Services extends Component {
                   </div>
                   <div className="card-body">
                     <h3 className="card-title">GitHub</h3>
-                    <p>
-                      You already are a reference point in your industry now you
-                      need to learn about acquisitions
+                    <p style={{color: 'black'}}>
+                      Let's connect and share ideas. The fun has only just begun!
                     </p>
                     <ul className="list-unstyled li-space-lg">
                       <li className="media">
@@ -150,6 +149,8 @@ export class Services extends Component {
 
 const ServicesContainer = styled.div`
   .cards-2 {
+    border-style: solid;
+    border-color: aqua;
     padding-top: 6.625rem;
     padding-bottom: 1.25rem;
     background-color: black;

@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Footer() {
   return (
     <FooterContainer>
-      <div className="footer"></div>
+      
 
       <div className="copyright">
         <p className="p-small">
@@ -19,7 +19,8 @@ function Footer() {
 const FooterContainer = styled.div`
   .footer {
     padding-top: 5rem;
-    background-color: #113448;
+    background-color: black;
+    
   }
 
   .footer .text-container {
@@ -42,6 +43,8 @@ const FooterContainer = styled.div`
     padding-bottom: 0.5rem;
     background-color: #113448;
     text-align: center;
+    border-style: solid;
+    border-color: aqua;
   }
 `;
 

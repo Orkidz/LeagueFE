@@ -40,7 +40,7 @@ const ChampionContainer = styled.div``;
 
 const ChampionData = styled.div`
   padding: 20px;
-  color: black;
+  color: white;
 
   &:hover {
     cursor: pointer;
@@ -49,15 +49,23 @@ const ChampionData = styled.div`
   img {
     width: 100%;
     margin-bottom: 40px !important;
+    border-style: solid;
+    border-color: aqua;
   }
 
   .image-container h2 {
+    color: white;
     margin-top: 0px !important;
-    text-align: left !important;
+    text-align: center !important;
+    border-style: solid;
+    border-color: aqua;
   }
 
   .image-container h3 {
-    text-align: left !important;
+    color: white;
+    text-align: center !important;
+    border-style: solid;
+    border-color: aqua;
   }
 `;
 

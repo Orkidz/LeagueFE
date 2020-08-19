@@ -43,7 +43,7 @@ export class Game extends Component {
                       <div>High Score: {this.props.highScore}</div>
                     </ScoresContainer>
                   </div>
-                  <h2>Which champion has more skins?</h2>
+                  <h2 style={{color: 'white'}}>Which champion has more skins?</h2>
                 </div>
               </div>
             </div>
@@ -72,6 +72,9 @@ const GameContainer = styled.div`
   .basic-1 {
     padding-top: 6.5rem;
     padding-bottom: 3rem;
+    background-color: black;
+    border-style: solid;
+    border-color: aqua;
   }
 
   .basic-1 .text-container {
@@ -162,7 +165,7 @@ const ScoresContainer = styled.div`
 
   div {
     display: inline-block;
-    font-size: 36px;
+    font-size: 40px;
   }
 `;
 

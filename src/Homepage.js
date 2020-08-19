@@ -95,7 +95,7 @@ const HomepageWrapper = styled.div`
 
   body,
   p {
-    color: #787976;
+    color: white;
     font: 400 1rem/1.5625rem "Open Sans", sans-serif;
   }
 

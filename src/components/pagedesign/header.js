@@ -12,7 +12,7 @@ export class Header extends Component {
     return (
       <HeaderContainer>
         <nav className="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-          <a className="navbar-brand logo-text page-scroll" href="index.html">
+          <a className="navbar-brand logo-text page-scroll" style={{color: 'aqua'}} href="index.html">
             Kaneki Games
           </a>
           <button
@@ -133,6 +133,8 @@ const fadeDropdown = keyframes`
 
 const HeaderContainer = styled.div`
   .navbar-custom {
+    border-style: solid;
+    border-color: aqua;
     padding-top: 0.375rem;
     padding-bottom: 0.375rem;
     background-color: #113448;
@@ -258,6 +260,8 @@ const HeaderContainer = styled.div`
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url("../images/header-background.jpg") center center no-repeat;
     background-size: cover;
+    border-style: solid;
+    border-color: aqua;
   }
 
   .header .header-content {
