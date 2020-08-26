@@ -12,7 +12,11 @@ export class Header extends Component {
     return (
       <HeaderContainer>
         <nav className="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-          <a className="navbar-brand logo-text page-scroll" style={{color: 'aqua'}} href="index.html">
+          <a
+            className="navbar-brand logo-text page-scroll"
+            style={{ color: "aqua" }}
+            href="/"
+          >
             Kaneki Games
           </a>
           <button
@@ -43,26 +47,6 @@ export class Header extends Component {
                 <a className="nav-link page-scroll" href="#socials">
                   SOCIALS
                 </a>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle page-scroll"
-                  id="navbarDropdown"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  SHOP
-                </a>
-                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="">
-                    <span className="item-text">Shop - coming soon</span>
-                  </a>
-                  <div className="dropdown-items-divide-hr"></div>
-                  <a className="dropdown-item" href="">
-                    <span className="item-text">Membership - coming soon</span>
-                  </a>
-                </div>
               </li>
               <li className="nav-item">
                 <a className="nav-link page-scroll" href="#socials">

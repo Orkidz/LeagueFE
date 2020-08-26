@@ -43,7 +43,9 @@ export class Game extends Component {
                       <div>High Score: {this.props.highScore}</div>
                     </ScoresContainer>
                   </div>
-                  <h2 style={{color: 'white'}}>Which champion has more skins?</h2>
+                  <h2 style={{ color: "white" }}>
+                    Which champion has more skins?
+                  </h2>
                 </div>
               </div>
             </div>
@@ -166,6 +168,7 @@ const ScoresContainer = styled.div`
   div {
     display: inline-block;
     font-size: 40px;
+    line-height: 50px;
   }
 `;
 

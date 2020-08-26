@@ -28,7 +28,7 @@ export class Homepage extends Component {
   }
 
   async fetchChampions() {
-    await fetch("http://localhost:3000/Champions")
+    await fetch("https://kanekigames.com/api/champions")
       .then((response) => response.json())
       .then((data) => {
         let jsonData = JSON.parse(JSON.stringify(data));
